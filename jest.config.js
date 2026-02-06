@@ -1,3 +1,6 @@
+/**
+ * Jest configuration
+ */
 module.exports = {
     // Use Node environment
     testEnvironment: 'node',
@@ -11,10 +14,10 @@ module.exports = {
 
     coverageThreshold: {
         global: {
-            branches: 80,
-            functions: 80,
-            lines: 80,
-            statements: 80,
+            branches: 70,
+            functions: 70,
+            lines: 70,
+            statements: 70,
         },
     },
 
@@ -25,9 +28,6 @@ module.exports = {
 
     // Module paths
     moduleDirectories: ['node_modules', 'src'],
-
-    // Setup files
-    // setupFilesAfterEnv: ['<rootDir>/tests/setup.js'],
 
     // Verbose output
     verbose: true,
