@@ -6,7 +6,7 @@ Thank you for considering contributing to markdown-confluence-sync-plugin-suppor
 
 1. **Fork and clone the repository**
 ```bash
-git clone https://github.com/yourusername/markdown-confluence-sync-plugin-support.git
+git clone https://github.com/JakubNovak123/markdown-confluence-sync-plugin-support.git
 cd markdown-confluence-sync-plugin-support
 ```
 
