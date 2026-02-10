@@ -1,0 +1,24 @@
+# Test files
+tests/
+*.test.js
+coverage/
+
+# Development files
+.eslintrc.js
+.prettierrc.js
+jest.config.js
+
+# Examples (optional - you might want to include these)
+examples/
+
+# Git files
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+.DS_Store

@@ -14,11 +14,7 @@
  * @returns {Array<Array>} Merged plugin array
  */
 function mergePlugins(pluginsBefore = [], builtInPlugins = [], pluginsAfter = []) {
-    return [
-        ...(pluginsBefore || []),
-        ...(builtInPlugins || []),
-        ...(pluginsAfter || []),
-    ];
+  return [...(pluginsBefore || []), ...(builtInPlugins || []), ...(pluginsAfter || [])];
 }
 
 /**
@@ -34,19 +30,19 @@ function mergePlugins(pluginsBefore = [], builtInPlugins = [], pluginsAfter = []
  * @throws {Error} If entry is invalid format
  */
 function normalizePluginEntry(entry) {
-    // If it's a function, wrap it in array with empty options
-    if (typeof entry === 'function') {
-        return [entry, {}];
-    }
+  // If it's a function, wrap it in array with empty options
+  if (typeof entry === 'function') {
+    return [entry, {}];
+  }
 
-    // If it's an array, validate and normalize
-    if (Array.isArray(entry)) {
-        const [plugin, options = {}] = entry;
-        return [plugin, options];
-    }
+  // If it's an array, validate and normalize
+  if (Array.isArray(entry)) {
+    const [plugin, options = {}] = entry;
+    return [plugin, options];
+  }
 
-    // Invalid entry type
-    throw new Error(`Invalid plugin entry: ${typeof entry}`);
+  // Invalid entry type
+  throw new Error(`Invalid plugin entry: ${typeof entry}`);
 }
 
 /**
@@ -59,18 +55,18 @@ function normalizePluginEntry(entry) {
  * @returns {Object} Processor with plugins applied (for chaining)
  */
 function applyPlugins(processor, plugins) {
-    let result = processor;
+  let result = processor;
 
-    for (const entry of plugins) {
-        const [plugin, options] = normalizePluginEntry(entry);
-        result = result.use(plugin, options);
-    }
+  for (const entry of plugins) {
+    const [plugin, options] = normalizePluginEntry(entry);
+    result = result.use(plugin, options);
+  }
 
-    return result;
+  return result;
 }
 
 module.exports = {
-    mergePlugins,
-    normalizePluginEntry,
-    applyPlugins,
+  mergePlugins,
+  normalizePluginEntry,
+  applyPlugins,
 };

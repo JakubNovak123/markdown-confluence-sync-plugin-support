@@ -1,34 +1,60 @@
 {
   "name": "markdown-confluence-sync-plugin-support",
   "version": "1.0.0",
-  "description": "Extended markdown-confluence-sync with plugin support",
+  "description": "Extended markdown-confluence-sync with plugin support for custom unified/remark/rehype plugins",
   "main": "src/index.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch",
     "test:coverage": "NODE_ENV=test jest --coverage",
-    "lint": "eslint src tests",
-    "lint:fix": "eslint src tests --fix",
-    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\"",
-    "format:check": "prettier --check \"src/**/*.js\" \"tests/**/*.js\""
+    "lint": "eslint src tests examples",
+    "lint:fix": "eslint src tests examples --fix",
+    "format": "prettier --write \"src/**/*.js\" \"tests/**/*.js\" \"examples/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\" \"tests/**/*.js\" \"examples/**/*.js\"",
+    "example:basic": "node examples/basic-usage.js",
+    "example:custom": "node examples/custom-plugin.js",
+    "example:config": "node examples/with-config-file.js",
+    "example:toc": "node examples/toc-plugin.js",
+    "examples": "node examples/run-all.js",
+    "prepublishOnly": "npm run lint && npm test"
   },
   "keywords": [
     "confluence",
     "markdown",
     "adf",
+    "atlassian",
     "converter",
     "unified",
     "remark",
-    "rehype"
+    "rehype",
+    "plugin",
+    "extensible",
+    "documentation"
   ],
-  "author": "Jakub Novák",
-  "license": "MIT",
-  "engines": {
-    "node": ">=14.0.0"
-  },
+  "author": "Jakub Novák <info@seo-solution.cz>",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/JakubNovak123/markdown-confluence-sync-plugin-support.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JakubNovak123/markdown-confluence-sync-plugin-support/issues"
+  },
+  "homepage": "https://github.com/JakubNovak123/markdown-confluence-sync-plugin-support#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.2",
+    "remark-rehype": "^10.1.0",
+    "unified": "^10.1.2"
   },
   "devDependencies": {
     "@jest/globals": "^30.2.0",
@@ -41,11 +67,5 @@
     "eslint-plugin-prettier": "^5.5.5",
     "jest": "^30.2.0",
     "prettier": "^3.8.1"
-  },
-  "dependencies": {
-    "remark-gfm": "^3.0.1",
-    "remark-parse": "^10.0.2",
-    "remark-rehype": "^10.1.0",
-    "unified": "^10.1.2"
   }
 }

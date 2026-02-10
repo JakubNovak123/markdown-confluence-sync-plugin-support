@@ -35,3 +35,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 .cache/
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
