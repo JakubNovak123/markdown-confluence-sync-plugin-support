@@ -353,4 +353,4 @@ Special thanks to the Telefónica team for the original implementation and the u
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Jakub Novák
