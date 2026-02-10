@@ -347,7 +347,7 @@ ISC
 
 ## 🙏 Acknowledgments
 
-This project extends [@telefonica/markdown-confluence-sync](https://github.com/Telefonica/confluence-tools) with plugin support as discussed in [issue #XXX](https://github.com/Telefonica/confluence-tools/issues/XXX).
+This project extends [@telefonica/markdown-confluence-sync](https://github.com/Telefonica/confluence-tools) with plugin support as discussed in [issue #XXX](https://github.com/Telefonica/confluence-tools/issues/77).
 
 Special thanks to the Telefónica team for the original implementation and the unified ecosystem maintainers.
 
