@@ -2,8 +2,8 @@
 
 > Extended version of `@telefonica/markdown-confluence-sync` with support for custom unified/remark/rehype plugins.
 
-[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/yourusername/markdown-confluence-sync-plugin-support)
-[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://github.com/yourusername/markdown-confluence-sync-plugin-support)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/JakubNovak123/markdown-confluence-sync-plugin-support)
+[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://github.com/JakubNovak123/markdown-confluence-sync-plugin-support)
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE)
 
 ## 🌟 Features
